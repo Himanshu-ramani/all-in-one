@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.corona{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.header-corna{
+    display: flex;
+    justify-content: space-between;
+}
+.header li{
+list-style: none;
+margin: 10px;
+
+}
+.header{
+    display: flex;
+    align-items: center;
+}
+#logo-corona{
+    height: 50px;
+    width: 50px;
+}
+.content{
+    margin-top: 100px;
+}
+.corona-page{
+    display: flex;
+}
+.img-landing{
+
+}
+.box-container{
+   margin-top: 30px;
+   margin-bottom: 50px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 10px;
+}
+.wheather{
+   display: flex;
+height: 500px;
+    background: linear-gradient(180deg, #FFFAFB 0%, #FFE7EC 100%);
+}
+.widget{
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+    background: #ffff;
+}
