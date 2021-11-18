@@ -6,25 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="style.css">
+ 
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <header></header>
+    <!-- <header class="main-header">
+      <div class="logo"><h3>Personalized All in website</h3></div> -->
+      <div class="topnav">
+        <a   onclick="covid()">COVID-19</a>
+        <a  onclick="wheather()">Wheather</a>
+        <a  onclick="newsshow()">News</a>
+      </div>
+    <!-- </header> -->
     <section class="corona">
       <header class="header-corna">
         <img src="./corona-logo.PNG" alt="" srcset="" id="logo-corona" />
-        <ul class="header">
+        <!-- <ul class="header">
           <li>Home</li>
           <li>Prevention</li>
           <li>Symptoms</li>
-        </ul>
+        </ul> -->
       </header>
       <div class="corona-page">
         <div class="content">
-          <div class="alert" style="color: red; margin-bottom: 10px;"><span>icon</span>COVID-19 ALERT</div>
-          <h1 style="font-size: 36px;">Together we fight COVID-19</h1>
-          <h3 style="color:grey; font-weight: 300;">
+          <div class="alert" style="color: red; margin-bottom: 10px">
+            <span>icon</span>COVID-19 ALERT
+          </div>
+          <h1 style="font-size: 36px">Together we fight COVID-19</h1>
+          <h3 style="color: grey; font-weight: 300">
             KEEP SAFE DISTANCE FOR COVID RESISTANCE; CLEAN HANDS AND FACE MASK
             CORONA WILL LEAVE BEFORE YOU ASK
           </h3>
@@ -32,37 +42,124 @@
         <div class="landing-img">
           <img src="./Capture.PNG" alt="" id="img-landing" srcset="" />
         </div>
-    </div>
-    <footer class="box-container">
-      <div class="box1">
-        <h2>Total Cases</h2>
-        <h3>----</h3>
       </div>
-      <div class="box2">
-        <h2>Active Cases</h2>
-        <h3>----</h3>
-      </div>
-      <div class="box3">
-        <h2>Recoverd</h2>
-        <h3 style="color: greenyellow">----</h3>
-      </div>
-      <div class="box4">
-        <h2>Deaths</h2>
-        <h3 style="color: red">----</h3>
-      </div>
-    </footer>
+      <footer class="box-container">
+        <div class="box1">
+          <h2>Total Cases</h2>
+          <h3 id="total-case">----</h3>
+        </div>
+        <div class="box2">
+          <h2>Active Cases</h2>
+          <h3 id="active-case">----</h3>
+        </div>
+        <div class="box3">
+          <h2>Recoverd</h2>
+          <h3 style="color: greenyellow" id="recoverd">----</h3>
+        </div>
+        <div class="box4">
+          <h2>Deaths</h2>
+          <h3 style="color: red" id="deaths">----</h3>
+        </div>
+      </footer>
+      <!--  -->
     </section>
     <div class="wheather">
-        <div class="search">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi maxime consequuntur quidem, est neque accusantium.
+      <!-- <div class="search">
+        
+      </div>
+      <div class="widget">
+        <div class="wheather-info">
+         <div> <h3 id="place" style="display: inline;">place</h3>,<h3 style="display: inline;"id="desh">--</h3></div>
+          <h1 id="tempture" style="font-size: 70px;">--</h1>
+          <h3 id="weatherText">cloudy</h3>
         </div>
-        <div class="widget">
-            <div class="wheather-info">
-                <h3>place</h3>
-                <h1>--</h1>
-                <h3>cloudy</h3>
-            </div>
+        <img
+          src="./cloud.jpg"
+          alt=""
+          srcset=""
+          style="height: 200px; width: 200px; object-fit: cover;"
+        />
+      </div> -->
+      <div class="cover">
+        <div class="one">
+          <h1 id="tempture" style="font-size: 70px;">27</h1>
         </div>
+        <div class="two" style="font-size: 30px;" >
+          <p id="date">date</p>
+          <p> <img src="./Vector.png" alt=""> <span id="place">state</span>, <span id="desh">country</span></p>
+        </div>
+        <div class="three">
+          <img src="./Day Clouds.png" id="wheather-img"  style="height: 200px; width: 200px; object-fit: cover;" alt="">
+        </div>
+      </div>
     </div>
+    <section class="news">
+      <div class="trending">
+        <img src="./news.jpg" alt="" id="trending-img" srcset="" style="height: 300px; width: auto; max-width:500px; object-fit: cover;" />
+        <div class="trending-content">
+          <h3 style="color: red">Trending</h3>
+          <h2 class="trending-title" id="trending-title">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
+            molestias totam ab quidem!
+          </h2>
+          <br />
+          <p class="trending-detail">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            nemo ipsum expedita non molestias dolorem molestiae, architecto
+            laboriosam recusandae similique quidem beatae fugiat.
+          </p>
+          <br />
+          <!-- <span class="time-tending">time</span>
+          <span class="author" style="margin-left: 50px">Author</span> -->
+          <button ><a id="btn" href="#" style="text-decoration: none; color: black;">Read more</a></button>
+        </div>
+      </div>
+   
+      <div class="news-container">
+        <!-- <div class="one">
+          <img src="./news.jpg" alt="" style="height: 270px; width: 320px" />
+          <p style="font-weight: 900">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+            repudiandae!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ullam
+            suscipit iure neque possimus mollitia consectetur quia harum eum
+            aspernatur!
+          </p>
+          <br /><br />
+          <button ><a id="btn" href="#" style="text-decoration: none; color: black;">Read more</a></button>
+        </div> -->
+        <!-- <div class="one">
+          <img src="./news.jpg" alt="" style="height: 270px; width: 320px" />
+          <p class="tittle-news" style="font-weight: 900">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+            repudiandae!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ullam
+            suscipit iure neque possimus mollitia consectetur quia harum eum
+            aspernatur!
+          </p>
+          <br /><br />
+          <div><span>time</span> <span>author</span></div>
+        </div>
+        <div class="onen">
+          <img src="./news.jpg" alt="" style="height: 270px; width: 320px" />
+          <p style="font-weight: 900">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+            repudiandae!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ullam
+            suscipit iure neque possimus mollitia consectetur quia harum eum
+            aspernatur!
+          </p>
+          <br /><br />
+          <div><span>time</span> <span>author</span></div>
+        </div> -->
+      </div>
+    </section>
+    <script src="./index.js"></script>
   </body>
 </html>
